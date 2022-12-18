@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Tailwindcss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-green-300">
+    <main class="flex justify-between my-24 mx-20 h-max bg-white rounded-2xl overflow-hidden">
+      <div class="mt-20">
+        <img class="w-scre h-screen" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhvsdNGVN1Dz5LTv7wsSgi22poXkMj5ooRyCIULUw9H89bFTTCMjhfFa_3wImGiC3xCmo&usqp=CAU" alt="" />
+      </div>
+      <div class="mt-20 w-auto">
+        <form class="block" action="">
+          <h1 class="block text-6xl font-extrabold text-green-600 mr-48">Sign up</h1>
+          <!-- Email -->
+          <label class="block mt-10 text-xl text-green-600 font-bold after:content-['*'] after:text-pink-600 after:ml-0.5" for="email">Email</label>
+          <input
+            class="block rounded-md border bg-green-100 pr-32 pb-1 hover:bg-green-200 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 invalid:text-pink-600 invalid:focus:ring-pink-600 invalid:focus:border-pink-600 peer"
+            type="email"
+            name="Email"
+            id="email"
+          />
+          <p class="text-sm m-1 text-pink-800 invisible peer-invalid:visible">Email tidak valid</p>
+          <!-- Password -->
+          <label class="block text-xl text-green-600 font-bold after:content-['*'] after:text-pink-600 after:ml-0.5" for="password">Password</label>
+          <input
+            class="block rounded-md bg-green-100 mb-5 pr-32 py-1 hover:bg-green-200 focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-pink-400 invalid:text-pink-600 invalid:focus:ring-pink-600 invalid:focus:border-pink-600 peer"
+            type="password"
+            name="Password"
+            id="password"
+          />
+
+          <!-- Checkbox -->
+          <input class="" type="checkbox" name="" id="remember" />
+          <label class="rounded-md font-light" for="remember">Remember Me</label>
+          <!-- Login button -->
+          <button class="text-xl text-white font-semibold block mt-5 bg-green-400 px-10 py-3 rounded-lg hover:bg-green-500 hover:ring-2" type="submit">Login</button>
+        </form>
+        <div class="flex my-20">
+          <p class="mx-2 my-auto font-light">Or login with</p>
+          <a href=""><img class="mx-1 my-auto hover:animate-bounce" src="./assets/facebook.png" alt="" /></a>
+          <a href=""><img class="mx-1 my-auto hover:animate-bounce" src="./assets/twitter.png" alt="" /></a>
+          <a href=""><img class="mx-1 my-auto hover:animate-bounce" src="./assets/google-plus.png" alt="" /></a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
